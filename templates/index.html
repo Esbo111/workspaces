@@ -1,0 +1,12 @@
+{{template "header.html" .}}
+
+<h1>HELLO GIN</h1>
+
+{{range .workload}}
+    <a href="/workspace/view/{{.ID}}">
+        <h2>{{.Name}}</h2>
+    </a>
+    
+{{end}}
+
+{{template "footer.html" .}}
